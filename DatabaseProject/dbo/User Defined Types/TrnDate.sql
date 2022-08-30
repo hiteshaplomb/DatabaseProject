@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[TrnDate]
+    FROM DATETIME NULL;
+

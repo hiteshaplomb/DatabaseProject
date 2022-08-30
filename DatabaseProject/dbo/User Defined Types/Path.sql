@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[Path]
+    FROM VARCHAR (2000) NULL;
+

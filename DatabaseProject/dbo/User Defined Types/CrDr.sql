@@ -1,0 +1,3 @@
+﻿CREATE TYPE [dbo].[CrDr]
+    FROM VARCHAR (2) NULL;
+
