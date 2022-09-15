@@ -83,7 +83,7 @@ BEGIN
 			Where CC.ChnID=@ChnID And CC.Type='Input' 
 
 			If Exists(Select 1 From ChannelConfigChild As[CCC] Inner Join ChannelConfig As[CC] On CCC.ChnConfigID = CC.ID
-				Where CC.ChnID=1 And CC.Type='Output' And CCC.Particular='Renderer')
+				Where CC.ChnID=@ChnID And CC.Type='Output' And CCC.Particular='Renderer')
 
 			    Select @RetRendererOutput=CCC.Argument,@RetIsRenderer='True'
 				From ChannelConfigChild As[CCC] Inner Join ChannelConfig As[CC] On CCC.ChnConfigID = CC.ID
